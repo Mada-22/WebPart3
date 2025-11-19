@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>CAKES R US — Order</title>
+  <link rel="stylesheet" href="styles.css/styles.css">
+</head>
+<body class="container1">
+  <header class="header">
+    <div class="header-top">
+      <img class="img" src="images/logo.jpg" alt="logo" width="60" height="60">
+      <h1 class="site-title">CAKES R US</h1>
+    </div>
+
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav-links">
+        <a href="index.html">Home</a> ||
+            <a href="about.html">About</a> ||
+            <a href="services.html">Services</a> ||
+            <a href="contact.html">Contact</a> ||
+            <a href="enquiry.html">Enquiry</a> ||
+            <a href="order.html" class="cta">Order</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section-wrapper">
+      <h2>Order Form</h2>
+      <form id="orderForm" class="form">
+        <label for="firstName">Name</label>
+        <input id="firstName" type="text" required>
+
+        <label for="lastName">Surname</label>
+        <input id="lastName" type="text" required>
+
+        <label for="tel">Number</label>
+        <input id="tel" type="tel" required>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+
+        <label for="cakeType">Type of cake</label>
+        <select id="cakeType">
+          <option>Chocolate cake</option>
+          <option>Carrot cake</option>
+          <option>Red Velvet</option>
+          <option>Vanilla cake</option>
+        </select>
+
+        <div class="grid-2">
+          <div>
+            <label for="date">Date</label>
+            <input id="date" type="date" required>
+          </div>
+          <div>
+            <label for="time">Time</label>
+            <input id="time" type="time" required>
+          </div>
+        </div>
+
+        <label>Delivery</label>
+        <div>
+          <label><input type="radio" name="delivery" value="yes" checked> Yes</label>
+          <label><input type="radio" name="delivery" value="no"> No</label>
+        </div>
+
+        <button type="submit" class="button">Submit order</button>
+      </form>
+
+      <div id="orderResult" class="hidden"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left"><p>Contact us: CakesRus@gmail.com</p></div>
+      <div class="footer-center"><p>&copy; 2025 Cakes R Us</p></div>
+      <div class="footer-right"><a href="contact.html">Contact</a></div>
+    </div>
+  </footer>
+
+  <script src="javaSc.js/java.js"></script>
+</body>
+</html>

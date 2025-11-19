@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CAKES R US — Enquiry</title>
+<link rel="stylesheet" href="styles.css/styles.css">
+</head>
+<body class="container1">
+
+<header class="header">
+    <div class="header-top">
+        <img class="img" src="images/logo.jpg" alt="logo" width="60" height="60">
+        <h1 class="site-title">CAKES R US</h1>
+    </div>
+
+    <nav class="nav">
+        <div class="nav-links">
+            <a href="index.html">Home</a> ||
+            <a href="about.html">About</a> ||
+            <a href="services.html">Services</a> ||
+            <a href="contact.html">Contact</a> ||
+            <a href="enquiry.html">Enquiry</a> ||
+            <a href="order.html" class="cta">Order</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+<section class="section-wrapper">
+<h2>Service Enquiry Form</h2>
+
+<form id="enquiryForm" class="form">
+
+<label for="ename">Name</label>
+<input id="ename" type="text" maxlength="40" required>
+
+<label for="eemail">Email</label>
+<input id="eemail" type="email" required>
+
+<label for="eservice">Service</label>
+<select id="eservice" required>
+    <option value="">Select service</option>
+    <option>Custom Cakes</option>
+    <option>Delivery & Setup</option>
+    <option>Cupcakes & Treats</option>
+</select>
+
+<label for="emessage">Brief Message (max 200 chars)</label>
+<textarea id="emessage" maxlength="200" rows="4" required></textarea>
+
+<button class="button">Send Enquiry</button>
+</form>
+
+<div id="enquiryResponse" class="hidden"></div>
+</section>
+</main>
+
+<footer>
+<div class="footer-container">
+<p>&copy; 2025 Cakes R Us</p>
+</div>
+</footer>
+
+<script src="javaSc.js/java.js"></script>
+</body>
+</html>

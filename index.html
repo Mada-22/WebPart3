@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CAKES R US — Home</title>
+  <link rel="stylesheet" href="styles.css/styles.css"> <!-- keep file name -->
+</head>
+<body class="container1">
+  <header class="header" role="banner">
+    <div class="header-top">
+      <img class="img" src="images/logo.jpg" alt="Cakes R Us logo" width="60" height="60">
+      <h1 class="site-title">CAKES R US</h1>
+    </div>
+
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-links">
+        <a href="index.html">Home</a> ||
+            <a href="about.html">About</a> ||
+            <a href="services.html">Services</a> ||
+            <a href="contact.html">Contact</a> ||
+            <a href="enquiry.html">Enquiry</a> ||
+            <a href="order.html" class="cta">Order</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" aria-label="Hero banner">
+      <img class="heroimg" src="https://images.pexels.com/photos/2144200/pexels-photo-2144200.jpeg" alt="Slices of cake on a table">
+      <div class="hero-text">
+        <h2>SLICE OF HAPPINESS</h2>
+        <p>Handcrafted cakes made with love — local delivery and custom designs.</p>
+        <a href="order.html" class="button">Order here...</a>
+      </div>
+    </section>
+
+    <!-- Featured cakes (dynamically filled by JS) -->
+    <section class="section-wrapper">
+      <h2 class="section-title">Featured Cakes</h2>
+
+      <div class="controls">
+        <input id="searchInput" type="search" placeholder="Search cakes or flavors..." aria-label="Search cakes">
+        <button id="openOffer" class="button alt">Today's Special</button>
+      </div>
+
+      <div id="cakesGrid" class="grid gallery">
+       
+      </div>
+    </section>
+
+    
+    <section class="section-wrapper">
+      <h2 class="section-title">What customers say</h2>
+      <div id="testimonials" class="testimonials">
+        
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <p>Contact us: <a href="mailto:CakesRus@gmail.com">CakesRus@gmail.com</a></p>
+        <p>Phone: <a href="tel:+27845077602">+27 84 507 7602</a></p>
+      </div>
+      <div class="footer-center">
+        <p>&copy; 2025 Cakes R Us — All rights reserved</p>
+      </div>
+      <div class="footer-right">
+        <a href="contact.html">Location & Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared modal / lightbox markup (hidden by default) -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-inner">
+      <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
+      <img id="modalImage" alt="" />
+      <div id="modalCaption" class="modal-caption"></div>
+    </div>
+  </div>
+
+  <!-- Special Offer popup -->
+  <div id="offerPopup" class="offer-popup" aria-hidden="true">
+    <div class="offer-card">
+      <button id="offerClose" class="modal-close">✕</button>
+      <h3>Today's Special — 10% off!</h3>
+      <p>Order any birthday cake today and get 10% off. Use code: SLICE10 at checkout.</p>
+      <a href="order.html" class="button">Order Now</a>
+    </div>
+  </div>
+
+  <script src="javaSc.js/java.js"></script>
+</body>
+</html>
